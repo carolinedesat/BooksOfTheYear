@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<booksoftheyear>
+
+     <category name="biography">
+        <book>
+            <title>Diddly Squat</title>
+            <author>Jeremy Clarkson</author>
+        </book>
+        <book>
+            <title>Windswept and Interesting: My Autobiography</title>
+            <author>Billy Connolly</author>
+        </book>
+        <book beestseller="true">
+            <title>And Away...</title>
+            <author>Bob Mortimer</author>
+        </book>
+
+    </category>
+         <category name="children">
+        <book>
+            <title>The Christmas Pig</title>
+            <author>J.K. Rowling</author>
+        </book>
+        <book>
+            <title>Gangsta Granny Strikes Again!</title>
+            <author>David Walliams</author>
+        </book>
+        <book beestseller="true">
+            <title>The Christmasaurus</title>
+            <author>Tom Fletcher</author>
+        </book>
+    </category>
+
+    <category name="cooking">
+        <book>
+            <title>Pinch of Nom Comfort Food</title>
+            <author>Kay Featherstone</author>
+        </book>
+        <book>
+            <title>Love to Cook</title>
+            <author>Mary Berry</author>
+        </book>
+        <book beestseller="true">
+            <title>Jane’s Patisserie</title>
+            <author>Jane Dunn</author>
+        </book>
+    </category>
+
+    <category name="romance">
+        <book>
+            <title>It Ends With Us</title>
+            <author>Colleen Hoover</author>
+        </book>
+        <book>
+            <title>Beautiful World, Where Are You</title>
+            <author>Sally Rooney</author>
+        </book>
+        <book beestseller="true">
+            <title>The Ladies' Midnight Swimming Club</title>
+            <author>Faith Hogan</author>
+        </book>
+    </category>
+
+     <category name="thriller">
+        <book>
+            <title>The Thursday Murder Club</title>
+            <author>Richard Osman</author>
+        </book>
+        <book>
+            <title>The Cicero Trilogy</title>
+            <author>Robert Harris</author>
+        </book>
+        <book beestseller="true">
+            <title>Girl A</title>
+            <author>Abigail Dean</author>
+        </book>
+    </category>
+
+</booksoftheyear>
