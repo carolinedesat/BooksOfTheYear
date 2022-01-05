@@ -1,0 +1,30 @@
+{
+  "name": "ssp-ca3",
+  "version": "1.0.0",
+  "description": "server-side programming assignment",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carolinedesat/ssp-ca3.git"
+  },
+  "keywords": [
+    "ca3"
+  ],
+  "author": "caroline",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carolinedesat/ssp-ca3/issues"
+  },
+  "homepage": "https://github.com/carolinedesat/ssp-ca3#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "fs": "^0.0.1-security",
+    "http": "^0.0.1-security",
+    "path": "^0.12.7",
+    "xml2js": "^0.4.23",
+    "xslt-processor": "^0.11.5"
+  }
+}
