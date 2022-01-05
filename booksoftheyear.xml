@@ -2,7 +2,7 @@
 
 <booksoftheyear>
 
-     <category name="biography">
+     <category name="Biography">
         <book>
             <title>Diddly Squat</title>
             <author>Jeremy Clarkson</author>
@@ -17,7 +17,7 @@
         </book>
 
     </category>
-         <category name="children">
+         <category name="Children">
         <book>
             <title>The Christmas Pig</title>
             <author>J.K. Rowling</author>
@@ -32,7 +32,7 @@
         </book>
     </category>
 
-    <category name="cooking">
+    <category name="Cooking">
         <book>
             <title>Pinch of Nom Comfort Food</title>
             <author>Kay Featherstone</author>
@@ -47,7 +47,7 @@
         </book>
     </category>
 
-    <category name="romance">
+    <category name="Romance">
         <book>
             <title>It Ends With Us</title>
             <author>Colleen Hoover</author>
@@ -62,7 +62,7 @@
         </book>
     </category>
 
-     <category name="thriller">
+     <category name="Thriller">
         <book>
             <title>The Thursday Murder Club</title>
             <author>Richard Osman</author>

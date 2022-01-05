@@ -4,7 +4,7 @@
     <table id="bookshopTable" border="1" class="indent">
         <thead>
             <tr>
-                <th>Select</th>
+                <th></th>
                 <th>Title</th>
                 <th>Author</th>
             </tr>
@@ -12,7 +12,7 @@
         <tbody>
             <xsl:for-each select="//category">
                 <tr>
-                    <td colspan="3">
+                    <td>
                         <xsl:value-of select="@name" />
                     </td>
                 </tr>
@@ -27,7 +27,7 @@
                         <td>
                             <xsl:value-of select="title" />
                         </td>
-                        <td align="right">
+                        <td align="center">
                             <xsl:value-of select="author" />
                         </td>
                     </tr>
