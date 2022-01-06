@@ -4,7 +4,7 @@
     <table id="bookshopTable" border="1" class="indent">
         <thead>
             <tr>
-                <th></th>
+                <th>Category</th>
                 <th>Title</th>
                 <th>Author</th>
             </tr>
