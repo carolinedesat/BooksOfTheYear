@@ -64,7 +64,7 @@ router.post('/post/json', function (req, res) {
         XMLtoJSON('booksoftheyear.xml', function (err, result) {
             if (err) throw (err);
             
-            result.menu.book[obj.sec_n].book.push({'title': obj.title, 'author': obj.author});
+            result.menu.category[obj.sec_n].book.push({'price': obj.price, 'author': obj.author});
 
             console.log(JSON.stringify(result, null, "  "));
 
@@ -89,7 +89,7 @@ router.post('/post/delete', function (req, res) {
         XMLtoJSON('booksoftheyear.xml', function (err, result) {
             if (err) throw (err);
             
-            delete result.menu.book[obj.book].book[obj.entree];
+            delete result.menu.category[obj.category].book[obj.entree];
 
             console.log(JSON.stringify(result, null, "  "));
 

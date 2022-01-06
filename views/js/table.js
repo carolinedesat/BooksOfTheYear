@@ -20,13 +20,13 @@ function draw_table()
 
 function select_row()
 {
-	$("#bookshopTable tbody tr[id]").click(function ()
+	$("#menuTable tbody tr[id]").click(function ()
 	{
-		$(".category").removeClass("category");
-		$(this).addClass("category");
-		var section = $(this).prevAll("tr").children("td[colspan='3']").length - 1;
+		$(".selected").removeClass("selected");
+		$(this).addClass("selected");
+		var category = $(this).prevAll("tr").children("td[colspan='3']").length - 1;
 		var entree = $(this).attr("id") - 1;
-		delete_row(section, entree);
+		delete_row(category, entree);
 	})
 };
 
@@ -40,7 +40,7 @@ function delete_row(sec, ent)
 			type: "POST",
 			data:
 			{
-				section: sec,
+				category: sec,
 				entree: ent
 			},
 			cache: false,
