@@ -16,9 +16,9 @@ p {
 }
 table {
     background-color: white;
-    border-color: black;
+    border-color: gray;
+    border-radius: 5px;
     border-width: thin;
-    border-collapse: collapse;
     width: 85%;
 }
 th {

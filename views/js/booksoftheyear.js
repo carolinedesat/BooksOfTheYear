@@ -1,11 +1,11 @@
 var gEntreeCount = 0;
 // returns a number that represents the sum of all the selected menu
 // item prices.
-function calculateBill(idMenuTable) {
+function calculateBill(idBookshopTable) {
     var fBillTotal = 0.0;
     var i = 0;
     // find the table tag
-    var oTable = document.getElementById(idMenuTable);
+    var oTable = document.getElementById(idBookshopTable);
     // go through the table and add up the prices of all
     // the selected items. The code takes advantage of the 
     // fact that each checkbox has a corresponding row in
@@ -28,7 +28,7 @@ function calculateBill(idMenuTable) {
 };
 // This function either turns on or off the row highlighting for vegetarian
 // items (depending on the value of bShowVeg)
-function highlightVegetarian(idTable, bShowVeg) {
+function highlightBestseller(idTable, bShowBest) {
     // if bShowVeg is true, then we're highlighting vegetarian
     //	meals, otherwise we're unhighlighting them.
     var i = 0;
@@ -38,8 +38,8 @@ function highlightVegetarian(idTable, bShowVeg) {
     // walk through each of the table rows and see if it has a 
     // "vegetarian" attribute on it.
     for (i = 0; i < aTRs.length; i++) {
-        if (aTRs[i].getAttribute('vegetarian') && aTRs[i].getAttribute('vegetarian') == "true") {
-            if (bShowVeg) {
+        if (aTRs[i].getAttribute('bestseller') && aTRs[i].getAttribute('bestseller') == "true") {
+            if (bShowBest) {
                 aTRs[i].style.backgroundColor = "lightGreen";
             } else {
                 aTRs[i].style.backgroundColor = "";
@@ -59,11 +59,11 @@ function getParentTag(oNode, sParentType) {
     return oParent;
 };
 window.addEventListener("load", function () {
-    document.forms[0].txtBillAmt.value = calculateBill('menuTable');
+    document.forms[0].txtBillAmt.value = calculateBill('bookshopTable');
     document.querySelector("#calcBill").addEventListener("click", function () {
-        document.forms[0].txtBillAmt.value = calculateBill('menuTable');
+        document.forms[0].txtBillAmt.value = calculateBill('bookshopTable');
     });
-    document.querySelector("#showVeg").addEventListener("click", function () {
-        highlightVegetarian('menuTable', this.checked);
+    document.querySelector("#showBest").addEventListener("click", function () {
+        highlightBestseller('bookshopTable', this.checked);
     });
 });

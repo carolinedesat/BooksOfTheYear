@@ -20,10 +20,10 @@ function draw_table()
 
 function select_row()
 {
-	$("#menuTable tbody tr[id]").click(function ()
+	$("#bookshopTable tbody tr[id]").click(function ()
 	{
-		$(".selected").removeClass("selected");
-		$(this).addClass("selected");
+		$(".category").removeClass("category");
+		$(this).addClass("category");
 		var section = $(this).prevAll("tr").children("td[colspan='3']").length - 1;
 		var entree = $(this).attr("id") - 1;
 		delete_row(section, entree);
