@@ -64,7 +64,7 @@ router.post('/post/json', function (req, res) {
         XMLtoJSON('booksoftheyear.xml', function (err, result) {
             if (err) throw (err);
             
-            result.menu.section[obj.sec_n].entry.push({'item': obj.item, 'price': obj.price});
+            result.menu.section[obj.sec_n].entry.push({'book': obj.book, 'author': obj.author});
 
             console.log(JSON.stringify(result, null, "  "));
 
@@ -86,7 +86,7 @@ router.post('/post/delete', function (req, res) {
 
         console.log(obj)
 
-        XMLtoJSON('PaddysCafe.xml', function (err, result) {
+        XMLtoJSON('booksoftheyear.xml', function (err, result) {
             if (err) throw (err);
             
             delete result.menu.section[obj.section].entry[obj.entree];
